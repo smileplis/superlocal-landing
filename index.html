@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperLocal — The operating system for local businesses</title>
+    <meta name="description" content="SuperLocal helps laundries, salons, tutors, garages, tailors, tiffin services and other local businesses manage orders, payments, customer communication, and bookings from one simple platform.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ─── Navbar ─── -->
+    <nav id="main-nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <div class="logo-mark"><i data-lucide="map-pin" class="logo-icon-svg"></i></div>
+                <span class="logo-text">SuperLocal</span>
+            </a>
+            <div class="nav-links">
+                <a href="#problem">The Problem</a>
+                <a href="#solution">Solution</a>
+                <a href="#who">Who it's for</a>
+                <a href="#why">Why us</a>
+            </div>
+            <a href="#cta" class="nav-cta">Get Early Access</a>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#problem">The Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#who">Who it's for</a>
+            <a href="#why">Why us</a>
+            <a href="#cta" class="btn btn-primary btn-sm">Get Early Access</a>
+        </div>
+    </nav>
+
+    <!-- ─── SECTION 1: Hero ─── -->
+    <section id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <i data-lucide="zap" class="badge-icon"></i>
+                    Launching soon in Pune
+                </div>
+                <h1 data-animate="fade-up" data-delay="80">
+                    Your local business deserves better than notebooks and WhatsApp chaos.
+                </h1>
+                <p class="hero-sub" data-animate="fade-up" data-delay="160">
+                    SuperLocal helps laundries, salons, tutors, garages, tailors, tiffin services, and other local businesses manage orders, payments, and customer communication — from one simple platform.
+                </p>
+                <div class="hero-actions" data-animate="fade-up" data-delay="240">
+                    <a href="#cta" class="btn btn-accent">
+                        Join Early Access
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#cta" class="btn btn-outline">
+                        Become a Pilot Business
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-up" data-delay="160">
+                <div class="hero-phone">
+                    <img src="assets/app-mockup.png" alt="SuperLocal dashboard on a phone" class="phone-img">
+                </div>
+                <!-- Floating notification cards -->
+                <div class="notif notif-1">
+                    <i data-lucide="check-circle-2" class="notif-icon notif-icon-green"></i>
+                    <div><strong>Order #47</strong><span>Marked complete</span></div>
+                </div>
+                <div class="notif notif-2">
+                    <i data-lucide="message-circle" class="notif-icon notif-icon-blue"></i>
+                    <div><strong>Reminder sent</strong><span>via WhatsApp</span></div>
+                </div>
+                <div class="notif notif-3">
+                    <i data-lucide="indian-rupee" class="notif-icon notif-icon-yellow"></i>
+                    <div><strong>₹2,400</strong><span>Collected today</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- ─── SECTION 2: The Problem ─── -->
+    <section id="problem">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i data-lucide="alert-triangle" class="tag-icon"></i> The Problem</span>
+                <h2>Millions of local businesses still run manually.</h2>
+            </div>
+
+            <div class="problem-layout">
+                <div class="problem-col" data-animate="fade-up" data-delay="0">
+                    <h3 class="problem-col-title">How businesses operate today</h3>
+                    <div class="problem-list">
+                        <div class="problem-item">
+                            <i data-lucide="notebook-pen" class="problem-icon"></i>
+                            <div><strong>Notebooks & diaries</strong><p>Orders, payments, addresses — all scribbled and easily lost.</p></div>
+                        </div>
+                        <div class="problem-item">
+                            <i data-lucide="message-square" class="problem-icon"></i>
+                            <div><strong>WhatsApp chaos</strong><p>Customer messages buried in group chats and personal threads.</p></div>
+                        </div>
+                        <div class="problem-item">
+                            <i data-lucide="brain" class="problem-icon"></i>
+                            <div><strong>Pure memory</strong><p>"Sharma ji ka payment aaya kya?" — nobody knows for sure.</p></div>
+                        </div>
+                        <div class="problem-item">
+                            <i data-lucide="banknote" class="problem-icon"></i>
+                            <div><strong>Scattered payments</strong><p>Cash, UPI, credit — no single view of what's owed.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-divider" data-animate="fade-up" data-delay="100">
+                    <div class="divider-line"></div>
+                    <div class="divider-label">This leads to</div>
+                    <div class="divider-line"></div>
+                </div>
+
+                <div class="problem-col" data-animate="fade-up" data-delay="200">
+                    <h3 class="problem-col-title">The consequences</h3>
+                    <div class="consequence-grid">
+                        <div class="consequence-chip"><i data-lucide="x-circle"></i> Missed orders</div>
+                        <div class="consequence-chip"><i data-lucide="clock"></i> Delayed payments</div>
+                        <div class="consequence-chip"><i data-lucide="users"></i> Customer confusion</div>
+                        <div class="consequence-chip"><i data-lucide="shuffle"></i> Operational chaos</div>
+                        <div class="consequence-chip"><i data-lucide="trending-down"></i> Limited growth</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 3: The Solution ─── -->
+    <section id="solution">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i data-lucide="lightbulb" class="tag-icon"></i> The Solution</span>
+                <h2>Built for the businesses that actually power our cities.</h2>
+                <p class="section-desc">Everything a local business needs. Nothing it doesn't.</p>
+            </div>
+            <div class="solution-grid">
+                <div class="sol-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon-wrap"><i data-lucide="package"></i></div>
+                    <h3>Order Management</h3>
+                    <p>Track every customer order, its status, and service details — all in one place.</p>
+                </div>
+                <div class="sol-card" data-animate="fade-up" data-delay="60">
+                    <div class="sol-icon-wrap"><i data-lucide="message-circle"></i></div>
+                    <h3>WhatsApp Communication</h3>
+                    <p>Send payment reminders and updates directly to customers. One tap, personalized.</p>
+                </div>
+                <div class="sol-card" data-animate="fade-up" data-delay="120">
+                    <div class="sol-icon-wrap"><i data-lucide="wallet"></i></div>
+                    <h3>Payment Tracking</h3>
+                    <p>See exactly who owes you and how much. Mark payments with a single tap.</p>
+                </div>
+                <div class="sol-card" data-animate="fade-up" data-delay="180">
+                    <div class="sol-icon-wrap"><i data-lucide="calendar-check"></i></div>
+                    <h3>Bookings & Scheduling</h3>
+                    <p>Manage appointments and recurring orders without double-booking.</p>
+                </div>
+                <div class="sol-card" data-animate="fade-up" data-delay="240">
+                    <div class="sol-icon-wrap"><i data-lucide="star"></i></div>
+                    <h3>Discovery & Trust</h3>
+                    <p>Help nearby customers find you and trust your service quality.</p>
+                </div>
+                <div class="sol-card" data-animate="fade-up" data-delay="300">
+                    <div class="sol-icon-wrap"><i data-lucide="truck"></i></div>
+                    <h3>Pickup & Delivery</h3>
+                    <p>Coordinate logistics, track deliveries, and keep customers informed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 4: Who It's For ─── -->
+    <section id="who">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i data-lucide="users" class="tag-icon"></i> Who it's for</span>
+                <h2>Designed for local service businesses.</h2>
+                <p class="section-desc">If you serve customers locally, SuperLocal is built for you.</p>
+            </div>
+            <div class="who-grid" data-animate="fade-up" data-delay="100">
+                <div class="who-chip"><i data-lucide="shirt"></i> Laundry & Ironing</div>
+                <div class="who-chip"><i data-lucide="scissors"></i> Salons</div>
+                <div class="who-chip"><i data-lucide="graduation-cap"></i> Tutors & Coaching</div>
+                <div class="who-chip"><i data-lucide="ruler"></i> Tailors</div>
+                <div class="who-chip"><i data-lucide="wrench"></i> Garages</div>
+                <div class="who-chip"><i data-lucide="settings"></i> Repair Shops</div>
+                <div class="who-chip"><i data-lucide="cooking-pot"></i> Tiffin Services</div>
+                <div class="who-chip"><i data-lucide="flower-2"></i> Nurseries</div>
+                <div class="who-chip"><i data-lucide="printer"></i> Printers</div>
+                <div class="who-chip"><i data-lucide="party-popper"></i> Event Services</div>
+                <div class="who-chip who-chip-more"><i data-lucide="plus"></i> And many more</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 5: Why SuperLocal is Different ─── -->
+    <section id="why">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i data-lucide="shield-check" class="tag-icon"></i> Why us</span>
+                <h2>We don't replace local businesses.<br><span class="text-accent">We upgrade them.</span></h2>
+            </div>
+            <div class="compare-table-wrap" data-animate="fade-up" data-delay="100">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Traditional Platforms</th>
+                            <th class="th-brand">SuperLocal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i data-lucide="x" class="compare-x"></i> Consumer-first</td>
+                            <td><i data-lucide="check" class="compare-check"></i> Provider-first</td>
+                        </tr>
+                        <tr>
+                            <td><i data-lucide="x" class="compare-x"></i> Discovery only</td>
+                            <td><i data-lucide="check" class="compare-check"></i> Operations + bookings</td>
+                        </tr>
+                        <tr>
+                            <td><i data-lucide="x" class="compare-x"></i> Providers become gig workers</td>
+                            <td><i data-lucide="check" class="compare-check"></i> Providers keep ownership</td>
+                        </tr>
+                        <tr>
+                            <td><i data-lucide="x" class="compare-x"></i> Fragmented workflows</td>
+                            <td><i data-lucide="check" class="compare-check"></i> Unified business system</td>
+                        </tr>
+                        <tr>
+                            <td><i data-lucide="x" class="compare-x"></i> Generic tools</td>
+                            <td><i data-lucide="check" class="compare-check"></i> Built for local businesses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 6: Field Insights ─── -->
+    <section id="field">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i data-lucide="map" class="tag-icon"></i> From the field</span>
+                <h2>Built alongside real businesses.</h2>
+                <p class="section-desc">We've been interviewing and onboarding local businesses across Pune. The same problems keep repeating.</p>
+            </div>
+            <div class="field-grid">
+                <div class="field-card field-card-main" data-animate="fade-up">
+                    <i data-lucide="quote" class="field-quote-icon"></i>
+                    <p class="field-quote">"I have 40 regular customers. I track everything in my head. When I forget, I lose money."</p>
+                    <div class="field-source">
+                        <div class="field-avatar"><i data-lucide="user"></i></div>
+                        <div><strong>Laundry owner</strong><span>Kothrud, Pune</span></div>
+                    </div>
+                </div>
+                <div class="field-card" data-animate="fade-up" data-delay="100">
+                    <i data-lucide="quote" class="field-quote-icon"></i>
+                    <p class="field-quote">"I send the same WhatsApp message 20 times a day for payment reminders."</p>
+                    <div class="field-source">
+                        <div class="field-avatar"><i data-lucide="user"></i></div>
+                        <div><strong>Tiffin service owner</strong><span>Baner, Pune</span></div>
+                    </div>
+                </div>
+                <div class="field-card" data-animate="fade-up" data-delay="200">
+                    <i data-lucide="quote" class="field-quote-icon"></i>
+                    <p class="field-quote">"I tried apps before — they're all built for big companies. I just need something simple."</p>
+                    <div class="field-source">
+                        <div class="field-avatar"><i data-lucide="user"></i></div>
+                        <div><strong>Salon owner</strong><span>Deccan, Pune</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="field-problems" data-animate="fade-up" data-delay="100">
+                <p class="field-problems-label">Recurring problems we found:</p>
+                <div class="field-problems-row">
+                    <span><i data-lucide="circle-alert"></i> Payment tracking</span>
+                    <span><i data-lucide="circle-alert"></i> Operational chaos</span>
+                    <span><i data-lucide="circle-alert"></i> Customer visibility</span>
+                    <span><i data-lucide="circle-alert"></i> Labour coordination</span>
+                    <span><i data-lucide="circle-alert"></i> No digital systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 7: Customer Side Vision ─── -->
+    <section id="customer">
+        <div class="container">
+            <div class="vision-card" data-animate="fade-up">
+                <div class="vision-left">
+                    <span class="section-tag section-tag-dark"><i data-lucide="search" class="tag-icon"></i> For customers</span>
+                    <h2>Discover trusted local businesses nearby.</h2>
+                    <p>SuperLocal aims to become the trust layer between customers and local businesses.</p>
+                </div>
+                <div class="vision-right">
+                    <div class="vision-item"><i data-lucide="compass"></i> Find reliable local services instantly</div>
+                    <div class="vision-item"><i data-lucide="calendar"></i> Simple, fast bookings</div>
+                    <div class="vision-item"><i data-lucide="message-circle"></i> Transparent communication</div>
+                    <div class="vision-item"><i data-lucide="bell"></i> Real-time updates via WhatsApp</div>
+                    <div class="vision-item"><i data-lucide="heart"></i> Support local entrepreneurs directly</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 8: CTA / Early Access ─── -->
+    <section id="cta">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag section-tag-light"><i data-lucide="rocket" class="tag-icon"></i> Early Access</span>
+                <h2>Join the future of local commerce.</h2>
+            </div>
+            <div class="cta-grid">
+                <div class="cta-path cta-business" data-animate="fade-up" data-delay="0">
+                    <div class="cta-path-icon"><i data-lucide="store"></i></div>
+                    <h3>For Businesses</h3>
+                    <p>Get early access to operational tools and pilot programs. We'll onboard you personally.</p>
+                    <form class="cta-form" data-type="business">
+                        <input type="email" placeholder="your@email.com" required>
+                        <button type="submit" class="btn btn-accent">
+                            Become a Pilot Business
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="cta-path cta-consumer" data-animate="fade-up" data-delay="120">
+                    <div class="cta-path-icon"><i data-lucide="user"></i></div>
+                    <h3>For Customers</h3>
+                    <p>Get notified when SuperLocal launches in your area. Be the first to discover local services.</p>
+                    <form class="cta-form" data-type="consumer">
+                        <input type="email" placeholder="your@email.com" required>
+                        <button type="submit" class="btn btn-primary">
+                            Join Waitlist
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Success message (hidden by default) -->
+            <div class="cta-success" id="cta-success" style="display:none;">
+                <i data-lucide="check-circle-2" class="success-icon-svg"></i>
+                <p>You're on the list. We'll reach out soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SECTION 9: Founder Story ─── -->
+    <section id="founder">
+        <div class="container">
+            <div class="founder-card" data-animate="fade-up">
+                <div class="founder-left">
+                    <span class="section-tag"><i data-lucide="heart-handshake" class="tag-icon"></i> Our story</span>
+                    <h2>Why we're building this.</h2>
+                </div>
+                <div class="founder-right">
+                    <p>SuperLocal started after directly working with MSMEs and local businesses across Maharashtra.</p>
+                    <p>We saw businesses with <strong>real demand</strong>, <strong>loyal customers</strong>, and <strong>incredible hustle</strong> — but almost no operational infrastructure.</p>
+                    <p>Most software today is built for large businesses. <strong>We believe local entrepreneurs deserve better tools too.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Footer ─── -->
+    <footer id="footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo-mark logo-mark-sm"><i data-lucide="map-pin" class="logo-icon-svg"></i></div>
+                    <span class="logo-text">SuperLocal</span>
+                </div>
+                <p class="footer-tagline">The operating system for local businesses.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SuperLocal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:hello@superlocal.in">hello@superlocal.in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
