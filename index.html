@@ -1,462 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperLocal — The operating system for local businesses</title>
-    <meta name="description" content="63 million micro-businesses run India. Most still run on notebooks and memory. SuperLocal gives them the tools to manage orders, payments, and customers — from their phone.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperLocal — The operating system for local businesses</title>
+  <meta name="description" content="63 million businesses run India. Most still run on memory and notebooks. SuperLocal gives them the tools to manage, grow, and thrive.">
+  <link rel="icon" href="logo_tp.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ─── Navbar ─── -->
-    <nav id="main-nav">
-        <div class="nav-inner">
-            <a href="#" class="nav-logo">
-                <div class="logo-mark"><i data-lucide="map-pin" class="logo-icon-svg"></i></div>
-                <span class="logo-text">SuperLocal</span>
-            </a>
-            <div class="nav-links">
-                <a href="#problem">The Problem</a>
-                <a href="#solution">Solution</a>
-                <a href="#who">Who it's for</a>
-                <a href="#field">From the field</a>
-            </div>
-            <a href="https://superlocalind.vercel.app" target="_blank" class="nav-cta nav-cta-app">Explore the App <i data-lucide="external-link"></i></a>
-            <a href="#cta" class="nav-cta">Get Early Access</a>
-            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
-                <i data-lucide="menu"></i>
-            </button>
+  <!-- ════ NAV ════ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="logo_tp.png" alt="SuperLocal" class="nav-logo-img">
+        <span class="nav-logo-text">SuperLocal</span>
+      </a>
+      <div class="nav-right">
+        <a href="https://superlocalind.vercel.app" target="_blank" rel="noopener" class="nav-link">Open App ↗</a>
+        <a href="#cta" class="nav-cta">Get Early Access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════ HERO ════ -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <img src="images/tiffin_onbike_mblr.png" alt="Tiffin delivery on scooter, Bengaluru" class="hero-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal-hero">
+      <p class="hero-eyebrow">63 million businesses · Built for Bharat</p>
+      <h1 class="hero-headline">They keep<br>the city<br><em>moving.</em></h1>
+      <p class="hero-sub">The tiffin uncle racing through traffic. The flour miller who feeds 200 families. The doctor who sees 80 patients a day. All running on memory, notebooks, and sheer will.</p>
+      <div class="hero-actions">
+        <a href="https://superlocalind.vercel.app" target="_blank" rel="noopener" class="btn-hero-primary">Try SuperLocal</a>
+        <a href="#people" class="btn-hero-ghost">See their world ↓</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </section>
+
+  <!-- ════ BRIDGE ════ -->
+  <section class="bridge" id="people">
+    <div class="bridge-inner">
+      <p class="bridge-text reveal">Every city in India runs on people like this one.<br>They serve thousands. They're paid late. They forget nothing — because they can't afford to.</p>
+      <div class="bridge-stats reveal">
+        <div class="bridge-stat">
+          <span class="stat-num">63M+</span>
+          <span class="stat-label">MSMEs in India</span>
         </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <a href="#problem">The Problem</a>
-            <a href="#solution">Solution</a>
-            <a href="#who">Who it's for</a>
-            <a href="#field">From the field</a>
-            <a href="https://superlocalind.vercel.app" target="_blank" class="btn btn-outline btn-sm">Explore the App</a>
-            <a href="#cta" class="btn btn-primary btn-sm">Get Early Access</a>
+        <div class="stat-divider"></div>
+        <div class="bridge-stat">
+          <span class="stat-num">90%</span>
+          <span class="stat-label">Still undigitised</span>
         </div>
-    </nav>
-
-    <!-- ═══ HERO ═══ -->
-    <section id="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="hero-badge" data-animate="fade-up">
-                    <i data-lucide="zap" class="badge-icon"></i>
-                    Building in Pune, for India
-                </div>
-                <h1 data-animate="fade-up" data-delay="80">
-                    63 million businesses run India.<br>
-                    <span class="text-brand">Most still run on<br>notebooks and hope.</span>
-                </h1>
-                <p class="hero-sub" data-animate="fade-up" data-delay="160">
-                    The laundry uncle tracking orders in his head. The tiffin aunty typing the same WhatsApp reminder 20 times a day. The tutor who doesn't know who paid this month. <strong>They deserve better tools.</strong>
-                </p>
-                <div class="hero-actions" data-animate="fade-up" data-delay="240">
-                    <a href="https://superlocalind.vercel.app" target="_blank" class="btn btn-accent">
-                        Explore the App
-                        <i data-lucide="arrow-up-right"></i>
-                    </a>
-                    <a href="#cta" class="btn btn-outline">
-                        Join Early Access
-                        <i data-lucide="arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual" data-animate="fade-up" data-delay="160">
-                <div class="hero-phone">
-                    <img src="assets/app-mockup.png" alt="SuperLocal dashboard" class="phone-img">
-                </div>
-                <div class="notif notif-1">
-                    <i data-lucide="check-circle-2" class="notif-icon notif-icon-green"></i>
-                    <div><strong>Order #47</strong><span>Marked complete</span></div>
-                </div>
-                <div class="notif notif-2">
-                    <i data-lucide="message-circle" class="notif-icon notif-icon-blue"></i>
-                    <div><strong>Reminder sent</strong><span>via WhatsApp</span></div>
-                </div>
-                <div class="notif notif-3">
-                    <i data-lucide="indian-rupee" class="notif-icon notif-icon-yellow"></i>
-                    <div><strong>₹2,400</strong><span>Collected today</span></div>
-                </div>
-            </div>
+        <div class="stat-divider"></div>
+        <div class="bridge-stat">
+          <span class="stat-num">₹10.7L Cr</span>
+          <span class="stat-label">Delayed payments / yr</span>
         </div>
-        <div class="hero-glow"></div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ═══ METRICS STRIP ═══ -->
-    <section id="metrics">
-        <div class="container">
-            <div class="metrics-grid">
-                <div class="metric-card" data-animate="fade-up" data-delay="0">
-                    <div class="metric-icon"><i data-lucide="building-2"></i></div>
-                    <div class="metric-number" data-count="63" data-suffix="M+">0</div>
-                    <div class="metric-label">MSMEs in India</div>
-                    <div class="metric-source">Ministry of MSME, 2023</div>
-                </div>
-                <div class="metric-card" data-animate="fade-up" data-delay="80">
-                    <div class="metric-icon metric-icon-red"><i data-lucide="wifi-off"></i></div>
-                    <div class="metric-number" data-count="90" data-suffix="%">0</div>
-                    <div class="metric-label">Still undigitized</div>
-                    <div class="metric-source">Industry estimates</div>
-                </div>
-                <div class="metric-card" data-animate="fade-up" data-delay="160">
-                    <div class="metric-icon metric-icon-yellow"><i data-lucide="clock"></i></div>
-                    <div class="metric-number">₹10.7L Cr</div>
-                    <div class="metric-label">Delayed payments annually</div>
-                    <div class="metric-source">CIBIL MSME Pulse, 2023</div>
-                </div>
-                <div class="metric-card" data-animate="fade-up" data-delay="240">
-                    <div class="metric-icon"><i data-lucide="trending-up"></i></div>
-                    <div class="metric-number">$100B+</div>
-                    <div class="metric-label">Local services market</div>
-                    <div class="metric-source">RedSeer Consulting</div>
-                </div>
-            </div>
+  <!-- ════ PHOTO STRIP ════ -->
+  <section class="strip-section" id="strip-section">
+    <div class="strip-track" id="photoStrip">
+
+      <article class="strip-card">
+        <div class="strip-img-wrap">
+          <img src="images/flour_mill_2_mblr.png" alt="Flour mill worker, Maharashtra">
         </div>
-    </section>
-
-    <!-- ═══ PROBLEM ═══ -->
-    <section id="problem">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i data-lucide="alert-triangle" class="tag-icon"></i> The Reality</span>
-                <h2>This is how most local businesses still operate.</h2>
-                <p class="section-desc">Not because they don't want better — because nothing was built for them.</p>
-            </div>
-
-            <div class="problem-layout">
-                <div class="problem-col" data-animate="fade-up" data-delay="0">
-                    <div class="problem-list">
-                        <div class="problem-item">
-                            <i data-lucide="notebook-pen" class="problem-icon"></i>
-                            <div>
-                                <strong>Notebooks & diaries</strong>
-                                <p>Every order, every address, every amount — scribbled in a diary that gets lost, torn, or rained on.</p>
-                            </div>
-                        </div>
-                        <div class="problem-item">
-                            <i data-lucide="message-square" class="problem-icon"></i>
-                            <div>
-                                <strong>WhatsApp as a CRM</strong>
-                                <p>Customer messages buried in 47 group chats. Payment reminders typed out one by one, 20 times a day.</p>
-                            </div>
-                        </div>
-                        <div class="problem-item">
-                            <i data-lucide="brain" class="problem-icon"></i>
-                            <div>
-                                <strong>Memory as a database</strong>
-                                <p>"Sharma ji ka payment aaya kya?" — nobody knows for sure. Money leaks silently, every single day.</p>
-                            </div>
-                        </div>
-                        <div class="problem-item">
-                            <i data-lucide="banknote" class="problem-icon"></i>
-                            <div>
-                                <strong>Payments everywhere, visibility nowhere</strong>
-                                <p>Cash, UPI, credit, advance — scattered across pockets and apps. No single view of who owes what.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="problem-image-col" data-animate="fade-up" data-delay="150">
-                    <div class="problem-image-card">
-                        <img src="assets/IMG_3791.png" alt="A local laundry shop owner in Pune, managing his business from behind the counter" class="problem-photo">
-                        <div class="problem-image-overlay">
-                            <p class="problem-image-caption">A laundry shop in Pune. Phone, PhonePe QR, and clothes on hangers — but orders still tracked in the owner's head.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="consequence-strip" data-animate="fade-up" data-delay="200">
-                <div class="consequence-label"><i data-lucide="arrow-down"></i> This leads to</div>
-                <div class="consequence-row">
-                    <div class="consequence-chip"><i data-lucide="x-circle"></i> Missed orders</div>
-                    <div class="consequence-chip"><i data-lucide="clock"></i> Delayed payments</div>
-                    <div class="consequence-chip"><i data-lucide="users"></i> Customer confusion</div>
-                    <div class="consequence-chip"><i data-lucide="shuffle"></i> Operational chaos</div>
-                    <div class="consequence-chip"><i data-lucide="trending-down"></i> Growth that never comes</div>
-                </div>
-            </div>
+        <div class="strip-caption">
+          <span class="caption-tag">Flour Mill · Maharashtra</span>
+          <p>He pours grain with dust clouds swirling. 200 families wait. Every single order lives inside his head.</p>
         </div>
-    </section>
+      </article>
 
-    <!-- ═══ SOLUTION ═══ -->
-    <section id="solution">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i data-lucide="lightbulb" class="tag-icon"></i> The Solution</span>
-                <h2>Built for the businesses that actually power our cities.</h2>
-                <p class="section-desc">Not another generic SaaS tool. A system designed around how local businesses actually work.</p>
-            </div>
-            <div class="solution-grid">
-                <div class="sol-card" data-animate="fade-up" data-delay="0">
-                    <div class="sol-icon-wrap"><i data-lucide="package"></i></div>
-                    <h3>Order Management</h3>
-                    <p>Every customer, every order, every status — in one place. No more flipping through pages.</p>
-                </div>
-                <div class="sol-card" data-animate="fade-up" data-delay="60">
-                    <div class="sol-icon-wrap"><i data-lucide="message-circle"></i></div>
-                    <h3>WhatsApp Reminders</h3>
-                    <p>One tap sends a personalized payment reminder with the exact amount. No more typing the same message 20 times.</p>
-                </div>
-                <div class="sol-card" data-animate="fade-up" data-delay="120">
-                    <div class="sol-icon-wrap"><i data-lucide="wallet"></i></div>
-                    <h3>Payment Tracking</h3>
-                    <p>See exactly who owes you and how much. Mark paid with a single tap. Your money, always accounted for.</p>
-                </div>
-                <div class="sol-card" data-animate="fade-up" data-delay="180">
-                    <div class="sol-icon-wrap"><i data-lucide="calendar-check"></i></div>
-                    <h3>Bookings & Scheduling</h3>
-                    <p>Manage appointments and recurring orders. No double-booking. No missed slots.</p>
-                </div>
-                <div class="sol-card" data-animate="fade-up" data-delay="240">
-                    <div class="sol-icon-wrap"><i data-lucide="star"></i></div>
-                    <h3>Discovery & Trust</h3>
-                    <p>Help nearby customers find you and trust your service. Your reputation, made visible.</p>
-                </div>
-                <div class="sol-card" data-animate="fade-up" data-delay="300">
-                    <div class="sol-icon-wrap"><i data-lucide="truck"></i></div>
-                    <h3>Pickup & Delivery</h3>
-                    <p>Coordinate pickups, track deliveries, and keep customers updated — without phone tag.</p>
-                </div>
-            </div>
+      <article class="strip-card">
+        <div class="strip-img-wrap">
+          <img src="images/electrician_mblr.png" alt="Electrician at work" style="object-position: center 20%;">
         </div>
-    </section>
-
-    <!-- ═══ WHO IT'S FOR ═══ -->
-    <section id="who">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i data-lucide="users" class="tag-icon"></i> Who it's for</span>
-                <h2>If you serve customers locally, this is yours.</h2>
-                <p class="section-desc">Every neighbourhood has businesses like these. They're the backbone of Indian commerce.</p>
-            </div>
-            <div class="who-grid" data-animate="fade-up" data-delay="100">
-                <div class="who-chip"><i data-lucide="shirt"></i> Laundry & Ironing</div>
-                <div class="who-chip"><i data-lucide="scissors"></i> Salons</div>
-                <div class="who-chip"><i data-lucide="graduation-cap"></i> Tutors & Coaching</div>
-                <div class="who-chip"><i data-lucide="ruler"></i> Tailors</div>
-                <div class="who-chip"><i data-lucide="wrench"></i> Garages</div>
-                <div class="who-chip"><i data-lucide="settings"></i> Repair Shops</div>
-                <div class="who-chip"><i data-lucide="cooking-pot"></i> Tiffin Services</div>
-                <div class="who-chip"><i data-lucide="flower-2"></i> Nurseries</div>
-                <div class="who-chip"><i data-lucide="printer"></i> Printers</div>
-                <div class="who-chip"><i data-lucide="party-popper"></i> Event Services</div>
-                <div class="who-chip who-chip-more"><i data-lucide="plus"></i> And many more</div>
-            </div>
+        <div class="strip-caption">
+          <span class="caption-tag">Electrician · Pune</span>
+          <p>Every wire in place. The building around him hums and blurs — he doesn't move until the job is done.</p>
         </div>
-    </section>
+      </article>
 
-    <!-- ═══ WHY DIFFERENT ═══ -->
-    <section id="why">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i data-lucide="shield-check" class="tag-icon"></i> Why us</span>
-                <h2>We don't replace local businesses.<br><span class="text-accent">We give them power.</span></h2>
-            </div>
-            <div class="compare-table-wrap" data-animate="fade-up" data-delay="100">
-                <table class="compare-table">
-                    <thead>
-                        <tr>
-                            <th>Traditional Platforms</th>
-                            <th class="th-brand">SuperLocal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><i data-lucide="x" class="compare-x"></i> Consumer-first</td>
-                            <td><i data-lucide="check" class="compare-check"></i> Provider-first</td>
-                        </tr>
-                        <tr>
-                            <td><i data-lucide="x" class="compare-x"></i> Discovery only</td>
-                            <td><i data-lucide="check" class="compare-check"></i> Operations + discovery</td>
-                        </tr>
-                        <tr>
-                            <td><i data-lucide="x" class="compare-x"></i> Providers become gig workers</td>
-                            <td><i data-lucide="check" class="compare-check"></i> Providers keep ownership</td>
-                        </tr>
-                        <tr>
-                            <td><i data-lucide="x" class="compare-x"></i> Fragmented workflows</td>
-                            <td><i data-lucide="check" class="compare-check"></i> One unified system</td>
-                        </tr>
-                        <tr>
-                            <td><i data-lucide="x" class="compare-x"></i> Generic enterprise tools</td>
-                            <td><i data-lucide="check" class="compare-check"></i> Built for ₹500/day businesses</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <article class="strip-card">
+        <div class="strip-img-wrap">
+          <img src="images/doctor_mblr.png" alt="Doctor writing prescriptions">
         </div>
-    </section>
-
-    <!-- ═══ FIELD INSIGHTS ═══ -->
-    <section id="field">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i data-lucide="map" class="tag-icon"></i> From the field</span>
-                <h2>We didn't build this in a co-working space.<br>We built it in their shops.</h2>
-                <p class="section-desc">We've spent months interviewing and onboarding local businesses across Pune. These are their words.</p>
-            </div>
-
-            <!-- Large image-backed testimonial -->
-            <div class="field-hero" data-animate="fade-up">
-                <div class="field-hero-image">
-                    <img src="assets/IMG_3791.png" alt="Laundry shop owner in Pune" loading="lazy">
-                    <div class="field-hero-overlay"></div>
-                </div>
-                <div class="field-hero-content">
-                    <i data-lucide="quote" class="field-hero-quote-icon"></i>
-                    <blockquote>"I have 40 regular customers. I track everything in my head. When I forget, I lose money. Nobody has built anything simple enough for me."</blockquote>
-                    <div class="field-hero-source">
-                        <div><strong>Laundry shop owner</strong></div>
-                        <div>Kothrud, Pune</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="field-grid">
-                <div class="field-card" data-animate="fade-up" data-delay="100">
-                    <i data-lucide="quote" class="field-quote-icon"></i>
-                    <p class="field-quote">"I type the same WhatsApp reminder 20 times a day. Copy-paste, change the name, change the amount. Every single day."</p>
-                    <div class="field-source">
-                        <div class="field-avatar"><i data-lucide="user"></i></div>
-                        <div><strong>Tiffin service owner</strong><span>Baner, Pune</span></div>
-                    </div>
-                </div>
-                <div class="field-card" data-animate="fade-up" data-delay="200">
-                    <i data-lucide="quote" class="field-quote-icon"></i>
-                    <p class="field-quote">"I tried 3 apps before. They're all built for companies with 50 employees. I just need to know who paid and who didn't."</p>
-                    <div class="field-source">
-                        <div class="field-avatar"><i data-lucide="user"></i></div>
-                        <div><strong>Salon owner</strong><span>Deccan, Pune</span></div>
-                    </div>
-                </div>
-                <div class="field-card" data-animate="fade-up" data-delay="300">
-                    <i data-lucide="quote" class="field-quote-icon"></i>
-                    <p class="field-quote">"My son set up a Google Sheet for me. I couldn't use it. It's not that I'm not smart — the tools just aren't made for how I work."</p>
-                    <div class="field-source">
-                        <div class="field-avatar"><i data-lucide="user"></i></div>
-                        <div><strong>Tailor</strong><span>Swargate, Pune</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="field-problems" data-animate="fade-up" data-delay="100">
-                <p class="field-problems-label">The same problems. Every shop. Every conversation.</p>
-                <div class="field-problems-row">
-                    <span><i data-lucide="circle-alert"></i> Payment tracking</span>
-                    <span><i data-lucide="circle-alert"></i> Order management</span>
-                    <span><i data-lucide="circle-alert"></i> Customer communication</span>
-                    <span><i data-lucide="circle-alert"></i> No digital system at all</span>
-                </div>
-            </div>
+        <div class="strip-caption">
+          <span class="caption-tag">Physician · Pune</span>
+          <p>Writing prescriptions since 6 AM. His appointment book is from 2009. Still going strong.</p>
         </div>
-    </section>
+      </article>
 
-    <!-- ═══ CUSTOMER VISION ═══ -->
-    <section id="customer">
-        <div class="container">
-            <div class="vision-card" data-animate="fade-up">
-                <div class="vision-left">
-                    <span class="section-tag section-tag-dark"><i data-lucide="search" class="tag-icon"></i> For customers</span>
-                    <h2>Discover trusted local businesses nearby.</h2>
-                    <p>SuperLocal aims to become the trust layer between customers and local businesses — making it easy to find, book, and pay the people who serve your neighbourhood.</p>
-                </div>
-                <div class="vision-right">
-                    <div class="vision-item"><i data-lucide="compass"></i> Find reliable local services instantly</div>
-                    <div class="vision-item"><i data-lucide="calendar"></i> Simple, fast bookings</div>
-                    <div class="vision-item"><i data-lucide="message-circle"></i> Transparent communication</div>
-                    <div class="vision-item"><i data-lucide="bell"></i> Real-time updates via WhatsApp</div>
-                    <div class="vision-item"><i data-lucide="heart"></i> Support local entrepreneurs directly</div>
-                </div>
-            </div>
+      <article class="strip-card">
+        <div class="strip-img-wrap">
+          <img src="images/turf_mblr.png" alt="Sports turf manager, Pune">
         </div>
-    </section>
-
-    <!-- ═══ FOUNDER STORY ═══ -->
-    <section id="founder">
-        <div class="container">
-            <div class="founder-card" data-animate="fade-up">
-                <div class="founder-left">
-                    <span class="section-tag"><i data-lucide="heart-handshake" class="tag-icon"></i> Our story</span>
-                    <h2>Why we're building this.</h2>
-                </div>
-                <div class="founder-right">
-                    <p>SuperLocal didn't start with a pitch deck. It started in laundry shops, tiffin kitchens, and tutoring centres across Maharashtra.</p>
-                    <p>We saw businesses with <strong>real demand</strong>, <strong>loyal customers</strong>, and <strong>incredible hustle</strong> — but almost no operational infrastructure. Orders tracked in notebooks. Payments tracked in memory. Customer communication happening through personal WhatsApp.</p>
-                    <p>Most software today is built for companies with IT teams and training budgets. <strong>The tiffin aunty doesn't have an IT team. But she has 80 customers and deserves a system that works for her.</strong></p>
-                    <p>That's what we're building. Not a CRM. Not an ERP. <strong>A digital notebook that actually works.</strong></p>
-                </div>
-            </div>
+        <div class="strip-caption">
+          <span class="caption-tag">Sports Turf · Pune</span>
+          <p>3 grounds, 15 teams, 200 weekly bookings — all coordinated over WhatsApp. One message at a time.</p>
         </div>
-    </section>
+      </article>
 
-    <!-- ═══ CTA ═══ -->
-    <section id="cta">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag section-tag-light"><i data-lucide="rocket" class="tag-icon"></i> Early Access</span>
-                <h2>Join the future of local commerce.</h2>
+    </div>
+
+    <div class="strip-controls">
+      <button class="strip-btn" id="stripPrev" aria-label="Previous">←</button>
+      <div class="strip-dots" id="stripDots"></div>
+      <button class="strip-btn" id="stripNext" aria-label="Next">→</button>
+    </div>
+    <p class="strip-hint">drag to scroll</p>
+  </section>
+
+  <!-- ════ CINEMA INTERSTITIAL — clinic ════ -->
+  <section class="cinema-section">
+    <div class="cinema-img-wrap">
+      <img src="images/clinic_mblr.png" alt="Neighbourhood clinic, India" class="cinema-img">
+    </div>
+    <div class="cinema-overlay"></div>
+    <div class="cinema-content reveal">
+      <p class="section-eyebrow">The Still Point</p>
+      <h2 class="cinema-headline">The city moves.<br><em>He doesn't.</em></h2>
+      <p class="cinema-sub">Every local business is the calm centre of its own chaos. The still point the neighbourhood orbits around.</p>
+    </div>
+  </section>
+
+  <!-- ════ PROBLEM ════ -->
+  <section class="problem-section">
+    <div class="problem-inner">
+
+      <div class="problem-text-col reveal">
+        <p class="section-eyebrow">The Reality</p>
+        <h2 class="problem-headline">The same four problems.<br>Every shop.<br>Every city.</h2>
+
+        <div class="problem-list">
+          <div class="problem-item">
+            <span class="problem-num">01</span>
+            <div class="problem-item-text">
+              <strong>Orders tracked in notebooks</strong>
+              <p>Or in their heads. When memory fails, money leaks. And it always fails eventually.</p>
             </div>
-            <div class="cta-grid">
-                <div class="cta-path cta-business" data-animate="fade-up" data-delay="0">
-                    <div class="cta-path-icon"><i data-lucide="store"></i></div>
-                    <h3>For Businesses</h3>
-                    <p>Get early access to operational tools and pilot programs. We'll onboard you personally.</p>
-                    <form class="cta-form" data-type="business">
-                        <input type="email" placeholder="your@email.com" required>
-                        <button type="submit" class="btn btn-accent">
-                            Become a Pilot Business
-                            <i data-lucide="arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="cta-path cta-consumer" data-animate="fade-up" data-delay="120">
-                    <div class="cta-path-icon"><i data-lucide="user"></i></div>
-                    <h3>For Customers</h3>
-                    <p>Get notified when SuperLocal launches in your area. Be the first to discover local services.</p>
-                    <form class="cta-form" data-type="consumer">
-                        <input type="email" placeholder="your@email.com" required>
-                        <button type="submit" class="btn btn-primary">
-                            Join Waitlist
-                            <i data-lucide="arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
+          </div>
+          <div class="problem-item">
+            <span class="problem-num">02</span>
+            <div class="problem-item-text">
+              <strong>WhatsApp as the only CRM</strong>
+              <p>The same reminder typed 20 times a day. Customer messages buried in 47 group chats.</p>
             </div>
-            <div class="cta-success" id="cta-success" style="display:none;">
-                <i data-lucide="check-circle-2" class="success-icon-svg"></i>
-                <p>You're on the list. We'll reach out soon.</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-num">03</span>
+            <div class="problem-item-text">
+              <strong>Payments everywhere, visibility nowhere</strong>
+              <p>Cash, UPI, credit, advance — scattered across pockets and apps. No single view of who owes what.</p>
             </div>
+          </div>
+          <div class="problem-item">
+            <span class="problem-num">04</span>
+            <div class="problem-item-text">
+              <strong>No tools built for them</strong>
+              <p>"I tried 3 apps. They're all made for companies with 50 employees. I just need to know who paid."</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- ═══ Footer ═══ -->
-    <footer id="footer">
-        <div class="container footer-inner">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="logo-mark logo-mark-sm"><i data-lucide="map-pin" class="logo-icon-svg"></i></div>
-                    <span class="logo-text">SuperLocal</span>
-                </div>
-                <p class="footer-tagline">The operating system for local businesses.</p>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 SuperLocal. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="mailto:hello@superlocal.in">hello@superlocal.in</a>
-                </div>
-            </div>
+      <div class="problem-img-col reveal">
+        <div class="problem-img-wrap">
+          <img src="images/electrician_mblr.png" alt="Electrician at work, Pune" style="object-position: center 15%;">
+          <div class="problem-img-caption-block">
+            <p>An electrician in Pune. Sharp hands. Blurred world. He's been doing this job for 22 years without a single missed appointment.</p>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+  </section>
+
+  <!-- ════ PULL QUOTE ════ -->
+  <section class="quote-section">
+    <div class="quote-bg-wrap">
+      <img src="images/doctor_mblr.png" alt="" class="quote-bg-img" aria-hidden="true">
+    </div>
+    <div class="quote-overlay"></div>
+    <div class="quote-content reveal">
+      <svg class="quote-mark" viewBox="0 0 48 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 36V21.6C0 9.6 7.2 2.4 21.6 0l2.7 4.5C17.4 6 13.5 10.2 13.5 16.2V18h9V36H0zm25.5 0V21.6C25.5 9.6 32.7 2.4 47.1 0L49.8 4.5C42.9 6 39 10.2 39 16.2V18h9V36H25.5z"/>
+      </svg>
+      <blockquote>I have 40 regular customers. I track everything in my head. When I forget, I lose money. Nobody has built anything simple enough for me.</blockquote>
+      <cite>— Laundry shop owner, Kothrud, Pune</cite>
+    </div>
+  </section>
+
+  <!-- ════ SOLUTION ════ -->
+  <section class="solution-section">
+    <div class="container">
+      <div class="solution-header reveal">
+        <p class="section-eyebrow light">The Solution</p>
+        <h2 class="solution-headline">A digital notebook<br>that actually works.</h2>
+        <p class="solution-sub">Not a CRM. Not an ERP. A system built around how local businesses actually work — from the phone already in their pocket.</p>
+      </div>
+
+      <div class="solution-grid">
+        <div class="sol-card reveal">
+          <div class="sol-num">01</div>
+          <h3>Every order, in one place</h3>
+          <p>Every customer, every order, every status — visible at a glance. No more flipping through pages.</p>
+        </div>
+        <div class="sol-card reveal">
+          <div class="sol-num">02</div>
+          <h3>One-tap WhatsApp reminders</h3>
+          <p>Personalised payment reminders sent with one tap. Stop typing the same message 20 times a day.</p>
+        </div>
+        <div class="sol-card reveal">
+          <div class="sol-num">03</div>
+          <h3>Know exactly who owes you</h3>
+          <p>UPI QR, cash, advance — all in one view. Your money, always accounted for.</p>
+        </div>
+        <div class="sol-card reveal">
+          <div class="sol-num">04</div>
+          <h3>Bookings and scheduling</h3>
+          <p>Appointments, recurring orders, slots. No double-booking. No missed customers. No phone calls.</p>
+        </div>
+        <div class="sol-card reveal">
+          <div class="sol-num">05</div>
+          <h3>Your own shop link</h3>
+          <p>Customers book directly with you. No middlemen. No commission. Your reputation, made visible online.</p>
+        </div>
+        <div class="sol-card reveal">
+          <div class="sol-num">06</div>
+          <h3>Built for ₹500/day businesses</h3>
+          <p>No training manual. No onboarding call. Open it, understand it, use it — in Hindi or English.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ WHO IT'S FOR ════ -->
+  <section class="who-section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Who it's for</p>
+      <h2 class="who-headline reveal">If you serve customers locally,<br>this is built for you.</h2>
+      <div class="who-chips reveal">
+        <span class="who-chip">Tiffin Services</span>
+        <span class="who-chip">Laundry &amp; Press</span>
+        <span class="who-chip">Clinics &amp; Doctors</span>
+        <span class="who-chip">Tutors &amp; Coaching</span>
+        <span class="who-chip">Sports Turfs</span>
+        <span class="who-chip">Auto Garages</span>
+        <span class="who-chip">Salons &amp; Barbershops</span>
+        <span class="who-chip">Tailors</span>
+        <span class="who-chip">Flour Mills</span>
+        <span class="who-chip">Repair Shops</span>
+        <span class="who-chip">PG &amp; Hostels</span>
+        <span class="who-chip">Gyms &amp; Fitness</span>
+        <span class="who-chip who-chip--more">+ many more</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FIELD ════ -->
+  <section class="field-section">
+    <div class="container">
+      <p class="section-eyebrow reveal">From the field</p>
+      <h2 class="field-headline reveal">We didn't build this<br>in a co-working space.</h2>
+      <p class="field-sub reveal">We built it in their shops.</p>
+      <div class="field-quotes">
+        <div class="field-quote reveal">
+          <svg class="fq-mark" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true"><path d="M0 18V10.8C0 4.8 3.6 1.2 10.8 0l1.35 2.25C8.7 3 6.75 5.1 6.75 8.1V9h4.5V18H0zm12.75 0V10.8C12.75 4.8 16.35 1.2 23.55 0l1.35 2.25C21.45 3 19.5 5.1 19.5 8.1V9H24V18H12.75z"/></svg>
+          <p>"I type the same WhatsApp reminder 20 times a day. Copy-paste, change the name, change the amount. Every single day."</p>
+          <cite>Tiffin service owner, Baner, Pune</cite>
+        </div>
+        <div class="field-quote reveal">
+          <svg class="fq-mark" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true"><path d="M0 18V10.8C0 4.8 3.6 1.2 10.8 0l1.35 2.25C8.7 3 6.75 5.1 6.75 8.1V9h4.5V18H0zm12.75 0V10.8C12.75 4.8 16.35 1.2 23.55 0l1.35 2.25C21.45 3 19.5 5.1 19.5 8.1V9H24V18H12.75z"/></svg>
+          <p>"I tried 3 apps before. They're all built for companies with 50 employees. I just need to know who paid and who didn't."</p>
+          <cite>Salon owner, Deccan, Pune</cite>
+        </div>
+        <div class="field-quote reveal">
+          <svg class="fq-mark" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true"><path d="M0 18V10.8C0 4.8 3.6 1.2 10.8 0l1.35 2.25C8.7 3 6.75 5.1 6.75 8.1V9h4.5V18H0zm12.75 0V10.8C12.75 4.8 16.35 1.2 23.55 0l1.35 2.25C21.45 3 19.5 5.1 19.5 8.1V9H24V18H12.75z"/></svg>
+          <p>"My son set up a Google Sheet for me. I couldn't use it. It's not that I'm not smart — the tools just aren't made for how I work."</p>
+          <cite>Tailor, Swargate, Pune</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CTA ════ -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <h2 class="cta-headline reveal">Start managing your<br>business the right way.</h2>
+      <p class="cta-sub reveal">Join local businesses across Pune already using SuperLocal. We'll set you up personally — free to start, no credit card required.</p>
+      <div class="cta-actions reveal">
+        <a href="https://superlocalind.vercel.app" target="_blank" rel="noopener" class="btn-cta-primary">Open SuperLocal ↗</a>
+        <a href="mailto:hello@superlocal.in" class="btn-cta-ghost">Talk to us</a>
+      </div>
+      <p class="cta-location reveal">Building in Pune · For India</p>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="logo_tp.png" alt="SuperLocal" class="footer-logo-img">
+        <span>SuperLocal</span>
+      </div>
+      <p class="footer-tagline">The operating system for local businesses.</p>
+      <div class="footer-bottom">
+        <p>© 2026 SuperLocal. All rights reserved.</p>
+        <a href="mailto:hello@superlocal.in">hello@superlocal.in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
