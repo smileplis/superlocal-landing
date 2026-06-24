@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: Georgia, serif;
+    background: #080808;
+    position: relative;
+  }
+  .photo {
+    position: absolute;
+    right: 0; top: 0;
+    width: 54%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  /* gradient: solid dark on left, fades out into photo on right */
+  .grad {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+      #080808 0%,
+      #080808 38%,
+      rgba(8,8,8,0.85) 52%,
+      rgba(8,8,8,0.2) 72%,
+      transparent 100%
+    );
+  }
+  .content {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 64px;
+  }
+  .eyebrow {
+    font-family: system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #e8a020;
+    margin-bottom: 22px;
+  }
+  .headline {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #f5f0e8;
+    margin-bottom: 20px;
+  }
+  .headline em {
+    font-style: italic;
+    color: #e8a020;
+  }
+  .sub {
+    font-family: system-ui, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(245,240,232,0.6);
+    line-height: 1.6;
+    max-width: 380px;
+    margin-bottom: 36px;
+  }
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .logo-text {
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(245,240,232,0.8);
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+  <img class="photo" src="images/tiffin_onbike_mblr.png" alt="">
+  <div class="grad"></div>
+  <div class="content">
+    <p class="eyebrow">63 million businesses · Built for Bharat</p>
+    <h1 class="headline">They keep<br>the city<br><em>moving.</em></h1>
+    <p class="sub">The operating system for India's local businesses.</p>
+    <div class="logo-row">
+      <img class="logo-img" src="logo_tp.png" alt="">
+      <span class="logo-text">SuperLocal</span>
+    </div>
+  </div>
+</body>
+</html>
